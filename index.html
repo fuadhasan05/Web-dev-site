@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-2</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- google font inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;800&display=swap" rel="stylesheet">
+
+    <!-- tailwind CSS and Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'nav-btn-primary': 'bg-gradient-to-tr from-indigo-500 to-purple-800'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<!--  custom style -->
+<style>
+    .font-inter {
+        font-family: 'Inter', sans-serif;
+    }
+</style>
+
+<body class="font-inter">
+    <header>
+        <!-- nav bar -->
+        <nav>
+            <div class="navbar bg-base-100 drop-shadow-md px-8">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>About us</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Case Studies</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>How it Works</a></li>
+                            <li><a>Hire</a></li>
+                        </ul>
+                    </div>
+                    <img src="assets/Logo.jpg" alt="">
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>About us</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Case Studies</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>How it Works</a></li>
+                        <li><a>Hire</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <button class="btn text-white bg-gradient-to-tr from-indigo-500 to-purple-800">Contact us</button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- slider section -->
+        <div class=" flex justify-center py-20 ">
+            <div class="pt-24">
+                <div class="space-y-4 ">
+                    <h1 class="text-5xl font-light ">
+                        Great <span class="font-bold text-[#DE4396]">Product</span> is
+                    </h1>
+                    <h1 class="text-5xl font-extrabold">
+                        built by great <span class="font-bold text-[#DE4396]">teams</span>
+                    </h1>
+                </div>
+                <p class="text-lg font-normal pt-7">
+                    We help build and manage a team of world-class developers <br> to bring your vision to life
+                </p>
+                <button class="btn bg-[#3D63EA] text-white mt-16 shadow shadow-blue-400">Let’s get started!</button>
+            </div>
+
+            <div>
+                <img src="assets/web-development.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- carousel section -->
+        <div class="bg-[#F9F9FF] py-16 ">
+            <h1 class="text-4xl font-bold text-center">Services we offer</h1>
+
+            <div class="flex justify-center gap-10 mt-10">
+                <!-- card-1 -->
+                <div class="bg-base-100 w-[335px] h-[285] border rounded-xl ">
+                    <div class="flex mx-4 my-9 ">
+                        <div class="space-y-5">
+                            <img src="assets/Mobile_app.png" class="w-12 rounded-full border border-pink-600" alt="">
+                            <h3 class="text-xl font-semibold ">Mobile App Development</h3>
+                            <p class="text-sm font-normal mt-2">
+                                A Website is an extension of yourself and we can help you to express it properly. Your
+                                website is your number one marketing asset because we live in a digital age.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-2 -->
+                <div class="bg-base-100 w-[335px] h-[285] border rounded-xl ">
+                    <div class="flex mx-4 my-9 ">
+                        <div class="space-y-5">
+                            <img src="assets/Code_perspective_matte.png"
+                                class="w-12 rounded-full border border-pink-600" alt="">
+                            <h3 class="text-xl font-semibold text-pink-600">
+                                Web Design & Development</h3>
+                            <p class="text-sm font-normal mt-2">
+                                A Website is an extension of yourself and we can help you to express it properly. Your
+                                website is your number one marketing asset because we live in a digital age.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-3 -->
+                <div class="bg-base-100 w-[335px] h-[285] border rounded-xl ">
+                    <div class="flex mx-4 my-9 ">
+                        <div class="space-y-5">
+                            <img src="assets/Dashboard_perspective_matte.png"
+                                class="w-12 rounded-full border border-pink-600" alt="">
+                            <h3 class="text-xl font-semibold">Software Testing Service</h3>
+                            <p class="text-sm font-normal mt-2">
+                                A Website is an extension of yourself and we can help you to express it properly. Your
+                                website is your number one marketing asset because we live in a digital age.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-4 -->
+                <!-- <div class="bg-base-100 w-[335px] h-[285] border rounded-xl ">
+                    <div class="flex mx-4 my-9 ">
+                        <div class="space-y-5">
+                            <img src="assets/Code_perspective_matte.png"
+                                class="w-12 rounded-full border border-pink-600" alt="">
+                            <h3 class="text-xl font-semibold">Software Testing Service</h3>
+                            <p class="text-sm font-normal mt-2">
+                                A Website is an extension of yourself and we can help you to express it properly. Your
+                                website is your number one marketing asset because we live in a digital age.</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <!-- landing camping section -->
+        <div class="bg-base-100 py-24 flex justify-center gap-32">
+
+            <div class="">
+                <img src="assets/Deco-line.png" class=" my-5" alt="">
+                <h1 class="text-4xl font-normal ">Leading companies trust us </h1>
+                <h1 class="text-4xl font-bold pt-5"> to develop software</h1>
+                <p class="py-8 text-lg font-normal">
+                    We <span class="text-pink-700">add development capacity</span> to tech teams. Our value isn't <br>
+                    limited to building teams but is equally distributed across the <br>
+                    project lifecycle. We are a custom software development <br>
+                    company that guarantees the successful delivery of your <br> project.
+                </p>
+                <a class="link link-hover link-error text-[#57007B] font-bold ">See more Informations </a>
+            </div>
+            <div>
+                <img src="assets/Rectangle.png" class="max-w-[600px] max-h-[460px] rounded-lg " />
+            </div>
+        </div>
+
+        <!-- people section -->
+        <div class="ml-24 space-y-3">
+            <img src="assets/Deco-line.png" class=" my-5  ">
+            <h1 class="text-4xl font-normal ">Meet the People </h1>
+            <h1 class="text-4xl font-bold ">We are Working With</h1>
+        </div>
+        <div class="flex justify-between bg-base-200 py-10 mt-20">
+            <img src="/assets/logo/Logo-9.png" alt="">
+            <img src="/assets/logo/logo8.png" alt="">
+            <img src="/assets/logo/logo5.png" alt="">
+            <img src="/assets/logo/Logo-7.png" alt="">
+            <img src="/assets/logo/logo9.png" alt="">
+            <img src="/assets/logo/Logo-6.png" alt="">
+        </div>
+
+        <!-- customers love section -->
+        <div class="grid justify-items-center mt-24 space-y-3 ">
+            <img src="assets/Deco-line.png" class="mb-5">
+            <h1 class="text-4xl font-normal ">Why cutomers love </h1>
+            <h1 class="text-4xl font-bold ">working with us</h1>
+            <p class="text-lg font-normal mt-12 text-center">
+                Without any doubt I recommend Alcaline Solutions as one of <br> the best web design and digital
+                marketing
+                agencies. One of <br> the best agencies I’ve came across so far. Wouldn’t be <br> hesitated to introduce
+                their
+                work to someone else.
+            </p>
+        </div>
+
+        <!-- rating section  -->
+        <div class="flex justify-center mt-12">
+            <!-- rating-1 -->
+            <div class="card bg-base-100 items-center opacity-50 ">
+                <figure class="">
+                    <img src="/assets/reted-person/Ellipse-1.png" alt="person-2" class="rounded-xl" />
+                </figure>
+                <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                </div>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Romeena De Silva</h2>
+                    <p>Janet Cosmetics</p>
+                </div>
+            </div>
+
+            <!-- rating-2 -->
+            <div class="card bg-base-100 items-center opacity-50 ">
+                <figure class="">
+                    <img src="/assets/reted-person/Ellipse-(1).png" alt="parson-2" class="rounded-xl" />
+                </figure>
+                <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                </div>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Romeena De Silva</h2>
+                    <p>Janet Cosmetics</p>
+                </div>
+            </div>
+
+            <!-- rating-3 -->
+            <div class="card bg-base-100 items-center  ">
+                <figure class="">
+                    <img src="/assets/reted-person/Ellipse-(2).png" alt="person-3" class="rounded-xl" />
+                </figure>
+                <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                </div>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Imran Khan</h2>
+                    <p>Software Engineer</p>
+                </div>
+            </div>
+
+            <!-- rating-4 -->
+            <div class="card bg-base-100 items-center opacity-50 ">
+                <figure class="">
+                    <img src="/assets/reted-person/Ellipse-(3).png" alt="preson-4" class="rounded-xl" />
+                </figure>
+                <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                </div>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Romeena De Silva</h2>
+                    <p>Janet Cosmetics</p>
+                </div>
+            </div>
+
+            <!-- rating-5 -->
+            <div class="card bg-base-100 items-center opacity-50 ">
+                <figure class="">
+                    <img src="/assets/reted-person/Ellipse-(4).png" alt="person-5" class="rounded-xl" />
+                </figure>
+                <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                </div>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Romeena De Silva</h2>
+                    <p>Janet Cosmetics</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- case studies section -->
+        <div class=" bg-[#F7F7FA;] py-24">
+            <div class="grid justify-items-center py-20 space-y-3 ">
+                <img src="assets/Deco-line.png" class="mb-5">
+                <h1 class="text-4xl font-normal ">Our recent </h1>
+                <h1 class="text-4xl font-bold ">Case studies</h1>
+            </div>
+            <!-- case-1 -->
+            <div class="hero ">
+                <div class="hero-content flex-col lg:flex-row gap-0  ">
+                    <img src="assets/Case-study__image.png" class="min-h-[420px] min-w-[600px]" />
+                    <div class=" bg-[#F1F2FF] min-h-[420px] min-w-[720px] pl-16 -ml-6">
+                        <div class=" h-64 ">
+                            <h1 class="text-3xl font-semibold py-10">Website Design for SCFC Canada</h1>
+                            <p class=" font-normal text-sm">
+                                Born out of a vision, a single-minded objective that puts service before <br>
+                                anything else, Swift Clearance and Forwarding Corp. surging forth to deliver <br>
+                                the best services in the shipping and logistics scenario. Its meteoric rise stems <br>
+                                out of a solid foundation. The management boasts of over 20 years of rich and <br>
+                                varied experience in the shipping and freight forwarding industry.</p>
+                            <a class="link link-hover font-semibold text-pink-700 flex justify-end pt-24 pr-32">Raed
+                                more ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- case-2 -->
+            <div class="hero ">
+                <div class="hero-content flex-col lg:flex-row gap-0  ">
+                    <img src="assets/Case-study__image(1).png" class="min-h-[420px] min-w-[600px]" />
+                    <div class=" bg-[#F0FFF7] min-h-[420px] min-w-[720px] pl-16 -ml-6">
+                        <div class=" h-64 ">
+                            <h1 class="text-3xl font-semibold py-10">Website Design for SCFC Canada</h1>
+                            <p class=" font-normal text-sm">
+                                Born out of a vision, a single-minded objective that puts service before <br>
+                                anything else, Swift Clearance and Forwarding Corp. surging forth to deliver <br>
+                                the best services in the shipping and logistics scenario. Its meteoric rise stems <br>
+                                out of a solid foundation. The management boasts of over 20 years of rich and <br>
+                                varied experience in the shipping and freight forwarding industry.</p>
+                            <a class="link link-hover font-semibold text-pink-700 flex justify-end pt-24 pr-32">Raed
+                                more ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- case-3 -->
+            <div class="hero ">
+                <div class="hero-content flex-col lg:flex-row gap-0  ">
+                    <img src="assets/Case-study__image(2).png" class="min-h-[420px] min-w-[600px]" />
+                    <div class=" bg-[#FFF4F4] min-h-[420px] min-w-[720px] pl-16 -ml-6">
+                        <div class=" h-64 ">
+                            <h1 class="text-3xl font-semibold py-10">Website Design for SCFC Canada</h1>
+                            <p class=" font-normal text-sm">
+                                Born out of a vision, a single-minded objective that puts service before <br>
+                                anything else, Swift Clearance and Forwarding Corp. surging forth to deliver <br>
+                                the best services in the shipping and logistics scenario. Its meteoric rise stems <br>
+                                out of a solid foundation. The management boasts of over 20 years of rich and <br>
+                                varied experience in the shipping and freight forwarding industry.</p>
+                            <a class="link link-hover font-semibold text-pink-700 flex justify-end pt-24 pr-32">Raed
+                                more ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="link link-hover font-semibold text-pink-700 flex justify-end pr-20">
+                Read more case studies ></a>
+        </div>
+
+        <!-- software section -->
+        <div class="py-24">
+            <div class="grid justify-items-center py-24 space-y-3 ">
+                <img src="assets/Deco-line.png" class="mb-5">
+                <h1 class="text-4xl font-normal ">Way of building </h1>
+                <h1 class="text-4xl font-bold ">Great Software</h1>
+            </div>
+            <!-- review-1 -->
+            <div class="hero ">
+                <div class="hero-content flex-col lg:flex-row-reverse gap-x-36  ">
+                    <img src="assets/Rectangle-17.png" class="min-h-[475px] min-w-[575px]" />
+                    <div class="  ">
+                        <h1 class="text-3xl font-semibold ">Build the right team to scale</h1>
+                        <p class=" font-normal text-lg py-8">
+                            Finding the right talent is not easy. We help you find the talent that suits your needs,
+                            follows your processes, and sticks with you long term (not the case with freelancers</p>
+                        <p class="font-normal text-lg pb-5">
+                            Our <span class="text-pink-600">delivery model</span> helps you cut costs and deliver
+                            within budget.
+                        </p>
+
+                        <div class="border-l-2 border-pink-700 ">
+                            <i class=" text-pink-600 ">
+                                "Simform is quick to identify larger problem with <br>the Software so we decided to
+                                expand
+                                our scope to build <br> new modules"
+                            </i>
+                        </div>
+                        <div class="flex pt-6 gap-2">
+                            <img src="assets/Ellipse-185.png" alt="">
+                            <div>
+                                <h1>Jeewa markram</h1>
+                                <p>CEO</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- review-2 -->
+            <div class="hero py-24 ">
+                <div class="hero-content flex-col lg:flex-row gap-x-36 ">
+                    <img src="assets/Rectangle-18.png" class="min-h-[475px] min-w-[575px]" />
+                    <div class="  ">
+                        <h1 class="text-3xl font-semibold ">Build the right team to scale</h1>
+                        <p class=" font-normal text-lg py-8">
+                            Finding the right talent is not easy. We help you find the talent that suits your needs,
+                            follows your processes, and sticks with you long term (not the case with freelancers</p>
+                        <p class="font-normal text-lg pb-5">
+                            Our <span class="text-pink-600">delivery model</span> helps you cut costs and deliver
+                            within budget.
+                        </p>
+                        <div class="border-l-2 border-pink-700 ">
+                            <i class=" text-pink-600 ">
+                                "Simform is quick to identify larger problem with <br>the Software so we decided to
+                                expand
+                                our scope to build <br> new modules"
+                            </i>
+                        </div>
+                        <div class="flex pt-6 gap-2">
+                            <img src="assets/Ellipse-185 (1).png" alt="">
+                            <div>
+                                <h1>Jeewa markram</h1>
+                                <p>CEO</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- review-1 -->
+            <div class="hero  ">
+                <div class="hero-content flex-col lg:flex-row-reverse gap-x-36 ">
+                    <img src="assets/Rectangle-19.png" class="min-h-[475px] min-w-[575px]" />
+                    <div class="  ">
+                        <h1 class="text-3xl font-semibold ">Build the right team to scale</h1>
+                        <p class=" font-normal text-lg py-8">
+                            Finding the right talent is not easy. We help you find the talent that suits your needs,
+                            follows your processes, and sticks with you long term (not the case with freelancers</p>
+                        <p class="font-normal text-lg pb-5">
+                            Our <span class="text-pink-600">delivery model</span> helps you cut costs and deliver
+                            within budget.
+                        </p>
+                        <div class="border-l-2 border-pink-700 ">
+                            <i class=" text-pink-600 ">
+                                "Simform is quick to identify larger problem with <br>the Software so we decided to
+                                expand
+                                our scope to build <br> new modules"
+                            </i>
+                        </div>
+                        <div class="flex pt-6 gap-2">
+                            <img src="assets/Ellipse-185 (2).png" alt="">
+                            <div>
+                                <h1>Jeewa markram</h1>
+                                <p>CEO</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- design section -->
+        <div class="bg-[#F7F7FA] py-24">
+            <div class="grid justify-items-center space-y-3 ">
+                <img src="assets/Deco-line.png" class="mb-5">
+                <h1 class="text-4xl font-normal ">Our design and </h1>
+                <h1 class="text-4xl font-bold ">development approach</h1>
+            </div>
+
+            <div class="flex justify-center gap-4 pt-24 ">
+                <!-- section-1 -->
+                <div class=" space-y-4">
+                    <!-- card-1 -->
+                    <div class="bg-base-100 w-[600px] h-[235] border border-pink-100 ">
+                        <div class="flex mx-8 mt-12 mb-8 gap-6">
+                            <div class="">
+                                <img src="design-img/Rocket_perspective_matte.png" class="w-16 rounded bg-black  "
+                                    alt="">
+                            </div>
+                            <div class="">
+                                <h3 class="text-xl font-semibold">UX Driven Engineering</h3>
+                                <p class="text-sm font-normal mt-2">
+                                    Unlike other companies, we are a UX first development company. Projects are driven
+                                    by
+                                    designers
+                                    and they make sure design and experiences translate to code.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-2 -->
+                    <div class="bg-base-100 w-[600px] h-[235] border border-pink-100">
+                        <div class="flex mx-8 mt-12 mb-8 gap-6">
+                            <div class="">
+                                <img src="design-img/Heart_rate_perspective_matte.png"
+                                    class="w-16 rounded bg-gradient-to-r from-[#FF92AE] to-[#FF3D9A] " alt="">
+                            </div>
+                            <div class="">
+                                <h3 class="text-xl font-semibold">UX Driven Engineering</h3>
+                                <p class="text-sm font-normal mt-2">
+                                    Unlike other companies, we are a UX first development company. Projects are driven
+                                    by
+                                    designers
+                                    and they make sure design and experiences translate to code.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-3 -->
+                    <div class="bg-base-100 w-[600px] h-[235] border border-pink-100 ">
+                        <div class="flex mx-8 mt-12 mb-8 gap-6">
+                            <div class="">
+                                <img src="design-img/Success_perspective_matte.png"
+                                    class="w-16 rounded bg-gradient-to-r from-[#FFEF5E] to-[#F7936F]   " alt="">
+                            </div>
+                            <div class="">
+                                <h3 class="text-xl font-semibold">UX Driven Engineering</h3>
+                                <p class="text-sm font-normal mt-2">
+                                    Unlike other companies, we are a UX first development company. Projects are driven
+                                    by
+                                    designers
+                                    and they make sure design and experiences translate to code.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- section-2 -->
+                <div class="space-y-4">
+                    <!-- card-4 -->
+                    <div class="bg-base-100 w-[600px] h-[235] border border-pink-100 ">
+                        <div class="flex mx-8 mt-12 mb-8 gap-6">
+                            <div class="">
+                                <img src="design-img/Code_perspective_matte.png"
+                                    class="w-16 rounded bg-gradient-to-r from-[#68DBF2] to-[#509CF5] " alt="">
+                            </div>
+                            <div class="">
+                                <h3 class="text-xl font-semibold">UX Driven Engineering</h3>
+                                <p class="text-sm font-normal mt-2">
+                                    Unlike other companies, we are a UX first development company. Projects are driven
+                                    by
+                                    designers
+                                    and they make sure design and experiences translate to code.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-5 -->
+                    <div class="bg-base-100 w-[600px] h-[235] border border-pink-100">
+                        <div class="flex mx-8 mt-12 mb-8 gap-6">
+                            <div class="">
+                                <img src="design-img/Shield_perspective_matte.png"
+                                    class="w-16 rounded bg-gradient-to-r from-[#67E9F1] to-[#24E795]  " alt="">
+                            </div>
+                            <div class="">
+                                <h3 class="text-xl font-semibold">UX Driven Engineering</h3>
+                                <p class="text-sm font-normal mt-2">
+                                    Unlike other companies, we are a UX first development company. Projects are driven
+                                    by
+                                    designers
+                                    and they make sure design and experiences translate to code.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-6 -->
+                    <div class="bg-base-100 w-[600px] h-[235] border border-pink-100">
+                        <div class="flex mx-8 mt-12 mb-8 gap-6">
+                            <div class="">
+                                <img src="design-img/Padlock_perspective_matte.png"
+                                    class="w-16 rounded bg-gradient-to-r from-[#F76680] to-[#57007B]  " alt="">
+                            </div>
+                            <div class="">
+                                <h3 class="text-xl font-semibold">UX Driven Engineering</h3>
+                                <p class="text-sm font-normal mt-2">
+                                    Unlike other companies, we are a UX first development company. Projects are driven
+                                    by
+                                    designers
+                                    and they make sure design and experiences translate to code.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- tech stack section -->
+        <div class="bg-base-100 py-24 border border-pink-100 ">
+            <div class="grid justify-items-center space-y-3">
+                <img src="assets/Deco-line.png" class="mb-5">
+                <h1 class="text-4xl font-normal ">Our </h1>
+                <h1 class="text-4xl font-bold ">Tech Stack</h1>
+            </div>
+
+            <div class=" flex justify-center gap-16 text-lg font-normal pt-10">
+                <h3 class="text-fuchsia-700 font-semibold">Backend</h3>
+                <h3>Frontend</h3>
+                <h3>Databases</h3>
+                <h3>CMS</h3>
+                <h3>CloudTesting</h3>
+                <h3>DevOps</h3>
+            </div>
+
+            <!-- stack image  -->
+            <div>
+                <div class="flex justify-center gap-16 mt-14">
+                    <img src="stack-img/NodeJS.png" alt="">
+                    <img src="stack-img/PHP.png" alt="">
+                    <img src="stack-img/mysql.png" alt="">
+                    <img src="stack-img/Java.png" alt="">
+                    <img src="stack-img/NETCore.png" alt="">
+                </div>
+
+                <div class="flex justify-center gap-16 mt-14">
+                    <img src="stack-img/Python.png" alt="">
+                    <img src="stack-img/RubyOnRails.png" alt="">
+                    <img src="stack-img/Go.png" class="w-[166px] h-[94px]" alt="">
+                    <img src="stack-img/mongodb.png" class="w-[200px] h-[54px]" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- development section -->
+        <div class="bg-base-100 py-24 ">
+            <div class="grid justify-items-center space-y-3">
+                <img src="assets/Deco-line.png" class="mb-5">
+                <h1 class="text-4xl font-normal ">How development </h1>
+                <h1 class="text-4xl font-bold ">through Alcaline works</h1>
+            </div>
+
+
+            <div class=" space-x-36 space-y-20 pt-24 ">
+
+                <!-- section-1 -->
+                <div class="flex justify-center space-x-20">
+                    <!-- card-1 -->
+                    <div class="bg-base-100 w-[300px] h-[160px] border border-pink-100 rounded-md ">
+                        <div class="flex mx-5 my-4 gap-6">
+                            <div class="">
+                                <h3 class="text-lg font-bold"> <span class="text-fuchsia-800">#1</span> Assemble the
+                                    right team</h3>
+                                <p class="text-sm font-normal mt-2">
+                                    We handle all aspects of vetting and choosing the right team that you don't have the
+                                    time, expertise, or desire to do.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-3 -->
+                    <div class="bg-base-100 w-[300px] h-[160px] border border-pink-100 rounded-md ">
+                        <div class="flex mx-5 my-4 gap-6">
+                            <div class="">
+                                <h3 class="text-lg font-bold"> <span class="text-fuchsia-800">#3</span> Tech
+                                    architecture
+                                </h3>
+                                <p class="text-sm font-normal mt-2">
+                                    We break monolithic apps into microservices. Decoupling the code allows teams to
+                                    move faster and more independently.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-5 -->
+                    <div class="bg-base-100 w-[300px] h-[160px] border border-pink-100 rounded-md ">
+                        <div class="flex mx-5 my-4 gap-6">
+                            <div class="">
+                                <h3 class="text-lg font-bold"> <span class="text-fuchsia-800">#5</span> Code reviews
+                                </h3>
+                                <p class="text-sm font-normal mt-2">
+                                    Code reviews before release help detect issues like memory leaks, file leaks,
+                                    performance signs, and general bad smells.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- section-2 -->
+                <div class="flex justify-center space-x-20">
+                    <!-- card-2 -->
+                    <div class="bg-base-100 w-[300px] h-[160px] border border-pink-100 rounded-md ">
+                        <div class="flex mx-5 my-4 gap-6">
+                            <div class="">
+                                <h3 class="text-lg font-bold"> <span class="text-fuchsia-800">#2</span> Sprint planning
+                                </h3>
+                                <p class="text-sm font-normal mt-2">
+                                    Sprint roadmap is a collective planning effort. Team members collaborate to clarify
+                                    items and ensure shared understanding.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-4 -->
+                    <div class="bg-base-100 w-[300px] h-[160px] border border-pink-100 rounded ">
+                        <div class="flex mx-5 my-4 gap-6">
+                            <div class="">
+                                <h3 class="text-lg font-bold"> <span class="text-fuchsia-800">#4</span> Standups &
+                                    weekly demo</h3>
+                                <p class="text-sm font-normal mt-2">
+                                    Standups, weekly demos, and weekly reviews make sure everyone is on the same page
+                                    and can raise their concerns.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-6 -->
+                    <div class="bg-base-100 w-[300px] h-[160px] border border-pink-100 rounded ">
+                        <div class="flex mx-5 my-4 gap-6">
+                            <div class="">
+                                <h3 class="text-lg font-bold"> <span class="text-fuchsia-800">#6</span> Iterative
+                                    delivery</h3>
+                                <p class="text-sm font-normal mt-2">
+                                    We divide the implementation process into several checkpoints rather than a single
+                                    deadline.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- featured section -->
+        <div>
+            <div class="grid justify-items-center space-y-3">
+                <img src="assets/Deco-line.png" class="mb-5">
+                <h1 class="text-4xl font-normal ">Featured </h1>
+                <h1 class="text-4xl font-bold ">Resources</h1>
+            </div>
+
+            <div class="flex space-x-16 mt-16">
+                <!-- card-1 -->
+                <div class=" w-[240px] h-[315px] bg-base-100 ">
+                    <figure><img src="/assets/featured-img/Rectangle-10.png" alt="Shoes" /></figure>
+                    <div class="">
+                        <p class="text-start pt-5">How to Build a Scalable Application up to 1 Million Users on AWS</p>
+                        <div class="card-actions justify-end">
+                            <a class="link link-hover font-semibold text-pink-700 pt-5 pr-4 ">Raed more ></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-2 -->
+                <div class=" w-[240px] h-[315px] bg-base-100 ">
+                    <figure><img src="/assets/featured-img/Rectangle-10-(1).png" class="w-[255px] h-[175px]"
+                            alt="Shoes" /></figure>
+                    <div class="">
+                        <p class="text-start pt-5">How to Build a Scalable Application up to 1 Million Users on AWS</p>
+                        <div class="card-actions justify-end">
+                            <a class="link link-hover font-semibold text-pink-700 pt-5 pr-4 ">Raed more ></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-3 -->
+                <div class=" w-[240px] h-[315px] bg-base-100 ">
+                    <figure><img src="/assets/featured-img/Rectangle-10-(2).png" class="w-[255px] h-[175px]"
+                            alt="Shoes" /></figure>
+                    <div class="">
+                        <p class="text-start pt-5">How to Build a Scalable Application up to 1 Million Users on AWS</p>
+                        <div class="card-actions justify-end">
+                            <a class="link link-hover font-semibold text-pink-700 pt-5 pr-4 ">Raed more ></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-4 -->
+                <div class=" w-[240px] h-[315px] bg-base-100 ">
+                    <figure><img src="/assets/featured-img/Rectangle-10-(3).png " class="w-[255px] h-[175px]" />
+                    </figure>
+                    <div class="">
+                        <p class="text-start pt-5">How to Build a Scalable Application up to 1 Million Users on AWS</p>
+                        <div class="card-actions justify-end">
+                            <a class="link link-hover font-semibold text-pink-700 pt-5 pr-4 ">Raed more ></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-5 -->
+                <div class=" w-[240px] h-[315px] bg-base-100 ">
+                    <figure><img src="/assets/featured-img/Rectangle-10-(4).png" class="w-[255px] h-[175px]" /></figure>
+                    <div class="">
+                        <p class="text-start pt-5">How to Build a Scalable Application up to 1 Million Users on AWS</p>
+                        <div class="card-actions justify-end">
+                            <a class="link link-hover font-semibold text-pink-700 pt-5 pr-4 ">Raed more ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <!-- hair section -->
+        <div class="py-20 flex justify-center ">
+            <div
+                class="bg-gradient-to-r from-[#E4ECF7] to-[#F1F1F5] w-[1230px] h-[285px] rounded-lg flex justify-center  gap-60">
+                <div class="py-24">
+                    <h2 class="text-4xl font-bold ">
+                        Hire the best developers and <br> designers around!
+                    </h2>
+
+                </div>
+                <div class="pt-28">
+                    <!-- <img src="assets/Group-40.png" alt=""> -->
+                    <button class="btn bg-gradient-to-r from-[#F16063] to-[#FFC656] text-white">Hire Top
+                        Developers</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- social section -->
+        <footer class="footer p-10 bg-base-100 text-base-content flex justify-center space-x-72">
+            <nav>
+                <img src="assets/Logo.jpg" alt="">
+                <p>Lorem Ipsum is simply dummy text of the <br>printing and typesetting industry. </p>
+                <img src="" alt="">
+                <img src="assets/google-page-speed 1.png" alt="">
+            </nav>
+            <nav>
+                <header class=" font-bold text-lg">Links</header>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover"> Case Studies</a>
+                <a class="link link-hover">How it works</a>
+                <a class="link link-hover"> Blog </a>
+                <a class="link link-hover">Careers </a>
+                <a class="link link-hover">Areas We Serves </a>
+            </nav>
+            <nav>
+                <header class=" font-bold text-lg">Contact us</header>
+                <p>Lorem Ipsum is simply dummy text <br>
+                    of the printing and typesetting <br> industry. </p>
+                <p>+923183561921</p>
+            </nav>
+        </footer>
+
+        <!-- copyright section -->
+        <div class="text-center py-5 border-2">
+            <p>© 2023 Copyright by IK Developers. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
